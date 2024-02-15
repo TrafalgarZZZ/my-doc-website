@@ -1,6 +1,7 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import Translate from '@docusaurus/Translate';
+import ThemedImage from '@theme/ThemedImage';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -11,12 +12,17 @@ import styles from './index.module.css';
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
+    <header className={clsx('hero hero--primary', styles.heroBackground)}>
       <div className="container">
-        <Heading as="h1" className="hero__title">
-          {siteConfig.title}
-        </Heading>
-        <p className="hero__subtitle"><Translate>{siteConfig.tagline}</Translate></p>
+        <ThemedImage 
+        className={styles.heroLogo}
+        alt="Docusaurus themed image"
+        sources={{
+          light: require('@site/static/img/fluid-stacked-color.png').default,
+          dark: require('@site/static/img/fluid-stacked-white.png').default,
+        }}>
+        </ThemedImage>
+        <p className={styles.heroSubtitle}><Translate>{siteConfig.tagline}</Translate></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
@@ -42,7 +48,13 @@ export default function Home() {
           <Translate>Fluid is a Cloud Native Computing Foundation Sandbox Project.</Translate>
           <p></p> 
           <a href="https://www.cncf.io/">
-            <img src="https://fluid-imgs.oss-cn-shanghai.aliyuncs.com/public/imgs/CNCF.png" width="20%" height="20%" align="center"/>
+            <ThemedImage 
+            sources={{
+              light: require('@site/static/img/homepage/CNCF-logo.png').default,
+              dark: require('@site/static/img/homepage/cncf-white.png').default,}}
+            width="20%"
+            height="20%"
+            align="center"></ThemedImage>
           </a>
           <p></p>
         </div>
