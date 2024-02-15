@@ -10,7 +10,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Fluid',
   tagline: 'Fluid, elastic data abstraction and acceleration for BigData/AI applications in cloud.',
-  favicon: 'img/fluid-horizontal-color.png',
+  favicon: 'img/fluid-icon-color.png',
 
   // Set the production url of your site here
   url: 'https://trafalgarzzz.github.io',
@@ -80,6 +80,7 @@ const config = {
         logo: {
           alt: 'Fluid',
           src: 'img/fluid-horizontal-color.png',
+          srcDark: 'img/fluid-horizontal-white.png',
         },
         items: [
           {
@@ -112,7 +113,7 @@ const config = {
             items: [
               {
                 label: 'Tutorial',
-                to: '/docs/intro',
+                to: '/docs/',
               },
             ],
           },
@@ -137,17 +138,14 @@ const config = {
             title: 'More',
             items: [
               {
-                label: 'Blog',
-                to: '/blog',
-              },
-              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/TrafalgarZZZ/my-doc-website',
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} The Fluid Authors. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark Usage page: 
+        https://www.linuxfoundation.org/trademark-usage`,
       },
       prism: {
         theme: prismThemes.github,

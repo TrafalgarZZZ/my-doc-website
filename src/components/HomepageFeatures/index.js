@@ -4,32 +4,32 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Dataset Abstraction',
+    Svg: require('@site/static/img/homepage/abstr-icon.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Provide Dataset abstraction for underlying heterogeneous data sources 
+        with multidimensional management in cloud environment.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Data Acceleration',
+    Svg: require('@site/static/img/homepage/accelerate-icon.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Enable dataset warmup and acceleration for data-intensive applications by 
+        using distributed cache in Kubernetes with observability, portability and scalability.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
+    title: 'Data-aware Scheduling',
+    Svg: require('@site/static/img/homepage/schedule-icon.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Taking characteristics of application and data into consideration 
+        for cloud application/dataset scheduling to improve the performance.
       </>
     ),
   },
@@ -39,7 +39,7 @@ function Feature({Svg, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={Svg} className={styles.featureSvg} role="img"/>
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>

@@ -32,11 +32,19 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
+      title={`Power Data Accessing on Kubernetes`}
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
         <HomepageFeatures />
+        <div align="center">
+          Fluid is a Cloud Native Computing Foundation Sandbox Project.
+          <p></p> 
+          <a href="https://www.cncf.io/">
+            <img src="https://fluid-imgs.oss-cn-shanghai.aliyuncs.com/public/imgs/CNCF.png" width="20%" height="20%" align="center"/>
+          </a>
+          <p></p>
+        </div>
       </main>
     </Layout>
   );
