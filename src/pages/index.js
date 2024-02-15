@@ -1,5 +1,6 @@
 import clsx from 'clsx';
 import Link from '@docusaurus/Link';
+import Translate from '@docusaurus/Translate';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
@@ -15,12 +16,12 @@ function HomepageHeader() {
         <Heading as="h1" className="hero__title">
           {siteConfig.title}
         </Heading>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
+        <p className="hero__subtitle"><Translate>{siteConfig.tagline}</Translate></p>
         <div className={styles.buttons}>
           <Link
             className="button button--secondary button--lg"
             to="/docs/">
-            Getting Started
+            <Translate>Getting Started</Translate>
           </Link>
         </div>
       </div>
@@ -38,7 +39,7 @@ export default function Home() {
       <main>
         <HomepageFeatures />
         <div align="center">
-          Fluid is a Cloud Native Computing Foundation Sandbox Project.
+          <Translate>Fluid is a Cloud Native Computing Foundation Sandbox Project.</Translate>
           <p></p> 
           <a href="https://www.cncf.io/">
             <img src="https://fluid-imgs.oss-cn-shanghai.aliyuncs.com/public/imgs/CNCF.png" width="20%" height="20%" align="center"/>

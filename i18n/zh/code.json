@@ -1,4 +1,31 @@
 {
+  "Getting Started": {
+    "message": "快速开始"
+  },
+  "Fluid, elastic data abstraction and acceleration for BigData/AI applications in cloud.": {
+    "message": "Fluid, 在云上为大数据以及AI应用的弹性数据提供抽象和加速服务。"
+  },
+  "Dataset Abstraction": {
+    "message": "云上数据集抽象"
+  },
+  "Provide Dataset abstraction for underlying heterogeneous data sources with multidimensional management in cloud environment.": {
+    "message": "提供面向底层多源异构数据源的云原生数据集抽象和多维度管理。"
+  },
+  "Data Acceleration": {
+    "message": "云上数据集加速"
+  },
+  "Enable dataset warmup and acceleration for data-intensive applications by using distributed cache in Kubernetes with observability, portability and scalability.": {
+    "message": "基于分布式缓存的云上数据集预热加速，并支持可观察性、可移植性和可扩展性。"
+  },
+  "Data-aware Scheduling": {
+    "message": "云上数据感知调度"
+  },
+  "Taking characteristics of application and data into consideration for cloud application/dataset scheduling to improve the performance.": {
+    "message": "兼顾应用特性和数据特性的云上应用/数据集协同调度，以进一步提升性能。"
+  },
+  "Fluid is a Cloud Native Computing Foundation Sandbox Project.": {
+    "message": "Fluid是CNCF(Cloud Native Computing Foundation)沙箱项目之一."
+  },
   "theme.ErrorPageContent.title": {
     "message": "页面已崩溃。",
     "description": "The title of the fallback page when the page crashed"

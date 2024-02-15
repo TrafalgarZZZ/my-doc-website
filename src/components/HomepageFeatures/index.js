@@ -1,35 +1,36 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Translate from '@docusaurus/Translate';
 
 const FeatureList = [
   {
-    title: 'Dataset Abstraction',
+    title: <Translate>Dataset Abstraction</Translate>,
     Svg: require('@site/static/img/homepage/abstr-icon.png').default,
     description: (
       <>
-        Provide Dataset abstraction for underlying heterogeneous data sources 
-        with multidimensional management in cloud environment.
+        <Translate>Provide Dataset abstraction for underlying heterogeneous data sources 
+        with multidimensional management in cloud environment.</Translate>
       </>
     ),
   },
   {
-    title: 'Data Acceleration',
+    title: <Translate>Data Acceleration</Translate>,
     Svg: require('@site/static/img/homepage/accelerate-icon.png').default,
     description: (
       <>
-        Enable dataset warmup and acceleration for data-intensive applications by 
-        using distributed cache in Kubernetes with observability, portability and scalability.
+        <Translate>Enable dataset warmup and acceleration for data-intensive applications by 
+        using distributed cache in Kubernetes with observability, portability and scalability.</Translate>
       </>
     ),
   },
   {
-    title: 'Data-aware Scheduling',
+    title: <Translate>Data-aware Scheduling</Translate>,
     Svg: require('@site/static/img/homepage/schedule-icon.png').default,
     description: (
       <>
-        Taking characteristics of application and data into consideration 
-        for cloud application/dataset scheduling to improve the performance.
+        <Translate>Taking characteristics of application and data into consideration 
+        for cloud application/dataset scheduling to improve the performance.</Translate>
       </>
     ),
   },

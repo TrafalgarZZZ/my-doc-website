@@ -13,7 +13,7 @@
   },
   "link.item.label.Tutorial": {
     "message": "Tutorial",
-    "description": "The label of footer link with label=Tutorial linking to /docs/intro"
+    "description": "The label of footer link with label=Tutorial linking to /docs/"
   },
   "link.item.label.Stack Overflow": {
     "message": "Stack Overflow",
@@ -27,16 +27,12 @@
     "message": "Twitter",
     "description": "The label of footer link with label=Twitter linking to https://twitter.com/docusaurus"
   },
-  "link.item.label.Blog": {
-    "message": "Blog",
-    "description": "The label of footer link with label=Blog linking to /blog"
-  },
   "link.item.label.GitHub": {
     "message": "GitHub",
-    "description": "The label of footer link with label=GitHub linking to https://github.com/facebook/docusaurus"
+    "description": "The label of footer link with label=GitHub linking to https://github.com/TrafalgarZZZ/my-doc-website"
   },
   "copyright": {
-    "message": "Copyright © 2024 My Project, Inc. Built with Docusaurus.",
+    "message": "Copyright © 2024 The Fluid Authors. All rights reserved. The Linux Foundation has registered trademarks and uses trademarks. For a list of trademarks of The Linux Foundation, please see our Trademark Usage page: https://www.linuxfoundation.org/trademark-usage",
     "description": "The footer copyright"
   }
 }
