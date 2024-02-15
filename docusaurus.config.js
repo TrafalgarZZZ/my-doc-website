@@ -8,9 +8,9 @@ import {themes as prismThemes} from 'prism-react-renderer';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
-  favicon: 'img/favicon.ico',
+  title: 'Fluid',
+  tagline: 'Fluid, elastic data abstraction and acceleration for BigData/AI applications in cloud.',
+  favicon: 'img/fluid-horizontal-color.png',
 
   // Set the production url of your site here
   url: 'https://trafalgarzzz.github.io',
@@ -24,8 +24,9 @@ const config = {
   projectName: 'my-doc-website', // Usually your repo name.
   trailingSlash: false,
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'warn',
   onBrokenMarkdownLinks: 'warn',
+  staticDirectories: ['public', 'static'],
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
@@ -75,19 +76,19 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'My Site',
+        title: '',
         logo: {
-          alt: 'My Site Logo',
-          src: 'img/logo.svg',
+          alt: 'Fluid',
+          src: 'img/fluid-horizontal-color.png',
         },
         items: [
           {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Tutorial',
+            position: 'right',
+            label: 'Docs',
           },
-          {to: '/blog', label: 'Blog', position: 'left'},
+          // {to: '/blog', label: 'Blog', position: 'left'},
           {
             type: 'docsVersionDropdown',
             position: 'right',
@@ -97,7 +98,7 @@ const config = {
             position: 'right',
           },
           {
-            href: 'https://github.com/facebook/docusaurus',
+            href: 'https://github.com/fluid-cloudnative/fluid',
             label: 'GitHub',
             position: 'right',
           },
