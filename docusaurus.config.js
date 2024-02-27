@@ -6,6 +6,21 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
+const versions = require('./versions.json');
+
+function getNextVersionName() {
+  const expectedPrefix = '0.';
+
+  const lastReleasedVersion = versions[0];
+  if (!lastReleasedVersion.includes(expectedPrefix)) {
+    throw new Error(
+      'this code is only meant to be used during the 0.X phase.',
+    );
+  }
+  const version = parseInt(lastReleasedVersion.replace(expectedPrefix, ''), 10);
+  return `${expectedPrefix}${version + 1}`;
+}
+
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Fluid',
@@ -55,6 +70,18 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl:
             'https://github.com/TrafalgarZZZ/my-doc-website/tree/master/',
+          showLastUpdateAuthor: true,
+          showLastUpdateTime: true,
+          includeCurrentVersion: true,
+          lastVersion: undefined,
+          onlyIncludeVersions: (() => {
+            return ['current', ...versions.slice(0, 3)];
+          })(),
+          versions: {
+            current: {
+              label: `${getNextVersionName()} 🚧`,
+            },
+          },
         },
         blog: {
           showReadingTime: true,

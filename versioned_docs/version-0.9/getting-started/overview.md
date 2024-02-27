@@ -46,12 +46,12 @@ We provide demo to show how to improve the AI model traning speed in Cloud by us
 
 ### Demo 1: Accelerate Remote File Accessing with Fluid
 
-[![](../../static/remote_file_accessing.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277753111709.mp4)
+<!-- [![](../../static/remote_file_accessing.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277753111709.mp4) -->
 
 
 ### Demo 2: Machine Learning with Fluid
 
-[![](../../static/machine_learning.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277528130570.mp4)
+<!-- [![](../../static/machine_learning.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277528130570.mp4) -->
 
 ## Quick Start
 Fluid needs to run on Kubernetes v1.14 or above version, also needs to support CSI storage. The deployment and management of Fluid Operator is through Helm v3 which is the package mangement tool on Kubernetes platform. Please make sure the Helm is correctly installed in the Kubernetes cluster before running Fluid.

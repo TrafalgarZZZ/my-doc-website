@@ -45,12 +45,12 @@ There are demos to show how to improve the AI model traning speed in Cloud by us
 
 ### Demo 1: Accelerate Remote File Accessing with Fluid
 
-[![](../../static/remote_file_accessing.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277753111709.mp4)
+<!-- [![](../../static/remote_file_accessing.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277753111709.mp4) -->
 
 
 ### Demo 2: Machine Learning with Fluid
 
-[![](../../static/machine_learning.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277528130570.mp4)
+<!-- [![](../../static/machine_learning.png)](http://cloud.video.taobao.com/play/u/2987821887/p/1/e/6/t/1/277528130570.mp4) -->
 
 ## Quick Start
 
@@ -70,4 +70,4 @@ Fluid provides support for data scenarios in three stages:
 3. Coordinating workloads and data in container clusters, managing multiple datasets, and improving data management efficiency.
 
 
-![](../../static/concepts/roadmap.png)
+<!-- ![](../../static/concepts/roadmap.png) -->
